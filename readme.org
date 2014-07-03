@@ -1,0 +1,16 @@
+#+AUTHOR: Nick Fun <nick@nick.gs>
+#+TITLE: Learn Java GUI
+#+DATE: 2014-07-03
+
+* learngui
+
+** About
+
+Sandbox to play with java gui tools
+
+** Goals
+
+1. Launch a GUI
+2. Load a JSON file and manip the GUI with data from the file
+3. Pressing GO will process the items from the USER list to the DONE list
+4. Processing doesn't mean anything for this project, this is just to learn GUI stuff for a tool I want to build at work
