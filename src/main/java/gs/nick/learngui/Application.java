@@ -15,7 +15,7 @@ public class Application {
     public static void main(String[] args) {
         System.out.println("Hello World");
         MainWindow w = new MainWindow();
-        w.setTitle("Device Networking Simulator");
+        w.setTitle("GUI Learning Platform");
         w.setVisible(true);
     }
 }
