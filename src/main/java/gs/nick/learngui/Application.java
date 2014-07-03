@@ -16,6 +16,8 @@ public class Application {
         System.out.println("Hello World");
         MainWindow w = new MainWindow();
         w.setTitle("GUI Learning Platform");
+        w.clearLists();
         w.setVisible(true);
     }
+    
 }

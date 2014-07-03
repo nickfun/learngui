@@ -18,6 +18,12 @@ public class MainWindow extends javax.swing.JFrame {
     public MainWindow() {
         initComponents();
     }
+    
+    public void clearLists() {
+        lstUserItems.removeAll();
+        lstDoneItems.removeAll();
+        System.out.println("MainWindow - Clear all lists");
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
