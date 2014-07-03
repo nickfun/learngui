@@ -30,23 +30,24 @@ public class MainWindow extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        UserItemsList = new javax.swing.JList();
+        lstUserItems = new javax.swing.JList();
         jLabel2 = new javax.swing.JLabel();
         btnStart = new javax.swing.JButton();
         btnExit = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jList2 = new javax.swing.JList();
+        lstDoneItems = new javax.swing.JList();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLabel1.setText("Items from your input file:");
 
-        UserItemsList.setModel(new javax.swing.AbstractListModel() {
+        lstUserItems.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane1.setViewportView(UserItemsList);
+        jScrollPane1.setViewportView(lstUserItems);
 
         jLabel2.setText("Progress:");
 
@@ -54,12 +55,12 @@ public class MainWindow extends javax.swing.JFrame {
 
         btnExit.setText("Exit Application");
 
-        jList2.setModel(new javax.swing.AbstractListModel() {
+        lstDoneItems.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane2.setViewportView(jList2);
+        jScrollPane2.setViewportView(lstDoneItems);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -139,13 +140,13 @@ public class MainWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JList UserItemsList;
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnStart;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JList jList2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JList lstDoneItems;
+    private javax.swing.JList lstUserItems;
     // End of variables declaration//GEN-END:variables
 }
