@@ -65,6 +65,11 @@ public class MainWindow extends javax.swing.JFrame {
         });
 
         btnExit.setText("Exit Application");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
 
         lstDoneItems.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -120,6 +125,12 @@ public class MainWindow extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.out.println("Button 'start' was pressed!");
     }//GEN-LAST:event_btnStartActionPerformed
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        // TODO add your handling code here:
+        System.out.println("Button 'exit' was pressed!");
+        this.dispose();
+    }//GEN-LAST:event_btnExitActionPerformed
 
 
 
